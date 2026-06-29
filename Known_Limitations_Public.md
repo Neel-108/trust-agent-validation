@@ -1,4 +1,4 @@
-## Trust Agent — Known Limitations 
+## Trust Agent - Known Limitations 
 
 Trust Agent has known, tested boundaries, disclosed here rather than
 left for someone else to find.
