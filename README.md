@@ -1,5 +1,20 @@
 ## Trust Agent - Validation Evidence
 
+## Contents
+
+- [What it is](./README.md)
+- [Capability Overview](./Capability_Overview.md)
+- [Validation Report](./Agentjacking_Validation_Report.md)
+- [Known Limitations](./Known_Limitations_Public.md)
+- [License](./LICENSE.md)
+
+
+![Status: Validated](https://img.shields.io/badge/status-validated-success)
+![Date: June 2026](https://img.shields.io/badge/date-June%202026-blue)
+![Attack Class: Agentjacking](https://img.shields.io/badge/attack%20class-Agentjacking-orange)
+![License: All Rights Reserved](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
+
+
 Trust Agent is a runtime verification layer for AI agent outputs,
 built around one principle: An action is only trustworthy if it
 traces back to what the user actually asked for, instead of something a
