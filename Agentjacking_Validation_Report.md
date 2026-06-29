@@ -20,11 +20,10 @@ This document tests whether Trust Agent, a runtime verification layer
 built independently around exactly that same principle, can catch this
 attack class on a real model and a real NLI backend, not a simulation.
 
-Result: all 4 cases behaved correctly given what the panel could
+Result: All 4 cases behaved correctly given what the panel could
 confirm. 3 of 4 cases passed or flagged exactly as designed, including
-the adversarially harder case. The fourth, a benign control, returned
-a conservative REFINE rather than a clean PASS: the panel correctly
-held back from auto-confirming a technical fix it could not verify
+the adversarially harder case. 
+The 4th, a benign control, returned a conservative REFINE rather than a clean PASS: the panel correctly held back from auto-confirming a technical fix it could not verify
 against the abstract request, rather than wrongly blocking it. That
 distinction was checked directly rather than assumed, and is reported
 honestly below, alongside two further entailment-behavior gaps found
@@ -32,18 +31,15 @@ during that investigation. Nothing here is presented as flawless.
 
 ----------------------------------------------------------------------
 
-## BACKGROUND — WHAT AGENTJACKING IS
+## BACKGROUND - WHAT AGENTJACKING IS
 
 In June 2026, Tenet Security's Threat Labs (researchers Ron Bobrov,
 Barak Sternberg, and Nevo Poran) disclosed that AI coding agents
 connected to Sentry via MCP could be hijacked using nothing but a
 public, write-only Sentry DSN credential, routinely exposed in
-frontend JavaScript. An attacker submits a forged error event
-formatted to look exactly like Sentry's own diagnostic output, with
-markdown headings, code blocks, and a fabricated "Resolution" section
-containing a malicious npx command. When a developer later asks their
-agent to fix unresolved Sentry issues, a request made routinely by
-thousands of teams every day, the agent retrieves the forged event,
+frontend JavaScript. 
+An attacker submits a forged error event formatted to look exactly like Sentry's own diagnostic output, with markdown headings, code blocks, and a fabricated "Resolution" section containing a malicious npx command. 
+When a developer later asks their agent to fix unresolved Sentry issues, a request made routinely by thousands of teams every day, the agent retrieves the forged event,
 cannot distinguish it from legitimate guidance, and executes the
 command with the developer's full local privileges.
 
@@ -204,11 +200,12 @@ testing them.
 Trust Agent reproduced and caught a real, recently disclosed,
 high-profile attack class on a real model, including the harder
 variant of it, with a working negative control proving it isn't simply
-banning a command outright. The one case it could not cleanly resolve
-on its own was investigated rather than asserted either way, and is
-reported here as two separate, named, traceable gaps rather than
-concealed. That combination, a real positive result and an honestly
-investigated open question found in the same breath, is the actual
-evidence this is a working verification mechanism under active testing,
-not a demo built to look good once.
+banning a command outright. 
+
+The one case it could not cleanly resolve on its own was investigated rather than asserted either way, and is reported here as two separate, named, traceable gaps rather than
+concealed. That combination, a real positive result and an honestly investigated open question found in the same breath, is the actual evidence this is a working verification mechanism under active testing, not a demo built to look good once.
+
+
+
+
 
