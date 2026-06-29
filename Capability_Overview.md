@@ -62,11 +62,13 @@ The interface
 Externally, Trust Agent is a single call. This is the entire surface and 
 nothing about how the verdict is computed is visible:
 
+```json
 INPUT   { request, output, source (optional), pack_id }
 OUTPUT  { verdict: PASS | REFINE | FLAG,
           faithfulness: 0.0-1.0,
           gaps: [ { gate, reason_code, field, detail } ],
           trace_id }
+```
 
 Reason codes are drawn from a fixed taxonomy of known failure modes,
 not a free-text explanation. Examples seen in the validation report in
@@ -79,7 +81,7 @@ than the one asked).
 
 pack_id selects a configuration profile for the domain being checked
 (for example, a security-review profile versus a DevOps-action
-profile) — the panel adapts what counts as a high-risk action per
+profile). The panel adapts what counts as a high-risk action per
 domain, rather than applying one fixed rule everywhere.
 
 Illustrative example
@@ -87,6 +89,7 @@ Illustrative example
 Constructed for readability, not a literal raw log, and using only
 the vocabulary already described above:
 
+```json
 {
   "verdict": "FLAG",
   "faithfulness": 0.0,
@@ -100,6 +103,8 @@ the vocabulary already described above:
   ],
   "trace_id": "example-001"
 }
+```
+
 
 This reflects the same category of result reported for the attack
 case in the validation report, shown here in the output shape rather
