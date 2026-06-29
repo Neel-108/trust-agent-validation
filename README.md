@@ -1,7 +1,7 @@
-Trust Agent — Validation Evidence (RITA)
+## Trust Agent - Validation Evidence
 
 Trust Agent is a runtime verification layer for AI agent outputs,
-built around one principle: an action is only trustworthy if it
+built around one principle: An action is only trustworthy if it
 traces back to what the user actually asked for, instead of something a
 tool or document handed the agent along the way.
 
@@ -11,7 +11,7 @@ logic, or calibration data as those are proprietary. What's published
 here is proof the system works and a clear account of where it
 currently doesn't, not how it's built.
 
-Contents
+## Contents
 
 Capability_Overview.md: What the system does, what it catches, and
 what it does not claim. Behavioral description only.
@@ -22,19 +22,22 @@ a deliberately harder adversarial variant and working negative
 controls. Full results, methodology, and an honestly reported open
 question.
 
-Known_Limitations_Public.md: 
-A plain-language account of where the
+Known_Limitations_Public.md: A plain-language account of where the
 system currently declines to auto-confirm rather than guess, and why
 that's the correct failure mode for a verification layer.
 
-Status
+## Status
 
 Independently built and tested by one person. Validated on a real
 local NLI model and a real LLM, it's not a simulation. 
 Not yet production-scale or independently audited.
 
-Contact
+## Contact
 
 Open to demonstration, evaluation, or collaboration discussions. The
 engine is not open source; access beyond what's published here is
 considered case by case.
+email - swapnilpanchal0215@gmail.com
+
+
+
