@@ -177,9 +177,8 @@ and a real LLM, correctly detected both the disclosed Agentjacking
 attack and a deliberately harder, more convincingly worded variant of
 it, while correctly passing the same command when it was actually
 authorized. That is the core security claim, demonstrated and not just asserted.
-This validates the mechanism on four cases, not exhaustive coverage; broader testing across more attack variants and blast-radius scenarios is planned next.
 
-What this does not validate: zero-failure reliability, or that every
+What this does not validate: Zero-failure reliability, or that every
 benign case resolves to a clean PASS rather than a conservative
 REFINE. 1 of 4 cases could not be auto-confirmed, and the
 investigation into why surfaced two separate, distinct phrasing-
@@ -191,6 +190,9 @@ verification system that claims perfection is less credible than one
 that documents exactly where its current boundaries are and keeps
 testing them.
 
+This is a first validation pass on 4 cases only, not exhaustive coverage. Broader testing across more attack variants and a wider blast radius is planned next, expanding the evidence already gathered here rather than claiming new capability. 
+
+Separately, the strongest next step for credibility is a live demonstration where an independent skeptic supplies the attack input directly and observes the verdict in real time, rather than relying on a self-reported result. That requires hosting and API access not yet in place, and is the stated next step.
 
 
 ----------------------------------------------------------------------
