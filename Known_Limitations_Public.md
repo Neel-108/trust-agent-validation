@@ -1,4 +1,4 @@
-Trust Agent — Known Limitations 
+## Trust Agent — Known Limitations 
 
 Trust Agent has known, tested boundaries, disclosed here rather than
 left for someone else to find.
@@ -11,7 +11,9 @@ named, and tracked internally, not described in detail here.
 In each of these cases, the system's default behavior is to decline
 to auto-confirm rather than to wrongly approve or wrongly block. It
 routes the uncertain case to human review (a REFINE verdict) instead
-of guessing. This is a deliberate design choice: a verification layer
+of guessing. 
+
+This is a deliberate design choice: a verification layer
 that fails by asking for a human look, rather than by silently passing
 or wrongly flagging, is the safer failure mode.
 
