@@ -1,4 +1,4 @@
-## Trust Agent — Capability Overview
+## Trust Agent - Capability Overview
 
 ## What it is
 
