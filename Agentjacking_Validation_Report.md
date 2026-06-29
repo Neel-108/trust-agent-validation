@@ -1,4 +1,5 @@
 Trust Agent vs Agentjacking
+
 A real-model validation against Tenet Security's disclosed attack class.
 
 Date: 28 June 2026
